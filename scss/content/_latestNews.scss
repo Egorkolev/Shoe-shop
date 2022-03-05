@@ -1,0 +1,38 @@
+.newsCaption {
+    margin-top: 50px;
+    & h2 {
+        @extend %section-caption;
+        text-align: center;
+    }
+}
+
+.latestGroup {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    .card {
+        max-width: 370px!important;
+        align-items: center;
+        flex: 1 1 220px;
+        border: none;
+        .row {
+            align-items: center;
+        }
+    }
+}
+
+.card-body {
+    .text-muted {
+        @extend %sub-caption;
+        text-decoration: none;
+        color: #C1C8CE!important;
+    }
+    & h5 {
+        @extend %sub-caption;
+    }
+    & p {
+        @extend %text;
+        text-align: left;
+    }
+}

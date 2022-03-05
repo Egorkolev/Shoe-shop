@@ -1,0 +1,41 @@
+
+// common styles
+@import './direction/templates.scss';
+@import './direction/reset.scss';
+@import './direction/header.scss';
+@import './direction/footer.scss';
+
+// main page
+@import './content/firstScrin.scss';
+@import './content/bestSeller.scss';
+@import './content/runningSneakers.scss';
+@import './content/support.scss';
+@import './content/latestNews.scss';
+@import './content/featuredProducts.scss';
+@import './content/searchQuery.scss';
+
+// list-grid
+@import './list-grid/hot_dial.scss';
+@import './list-grid/sideBar.scss';
+@import './list-grid/price_range.scss';
+
+// PRODUCT_INFO
+@import './product-info/mySwiper.scss';
+@import './product-info/shues-info.scss';
+@import './product-info/swiperSeller.scss';
+@import './product-info/produkt_information.scss';
+@import './product-info/cart-product.scss';
+@import './product-info/contact.scss';
+
+// MEDIA
+@import './direction/media';
+
+
+
+html {
+    font-size: 10px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}

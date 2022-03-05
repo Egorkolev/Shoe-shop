@@ -1,0 +1,177 @@
+.product-Info {
+    .shues-Info {
+        margin-top: 3rem;
+        .slider-information {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .shues-information {
+                margin: 50px 30px 0;
+                .bottomInfo {
+                    & h2 {
+                        @extend %sub-caption;
+                    }
+                    .review {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 10px;
+                        .star {
+                            & ul {
+                                display: flex;
+                                & li {
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                        .submit {
+                            display: flex;
+                            .oReviews {
+                                margin-right: 10px;
+                                @extend %text;
+                                color: $gray;
+                            }
+                            .subReview {
+                                @extend %text;
+                                color: $blue;
+                            }
+                        }
+                    }
+                    .string {
+                        background: #FAFAFB;
+                        height: 3px;
+                        max-width: 400px;
+                        margin: 10px 0;
+                    }
+                    .prices {
+                        display: flex;
+                        margin-top: 10px;
+                        & p {
+                            margin-right: 10px;
+                            @extend %text;
+                        }
+                        .salePrice {
+                            color: $blue;
+                        }
+                        .price {
+                            color: $gray;
+                        }
+                        .discount {
+                            color: $red;
+                        }
+                    }
+                    .select-color {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        margin-top: 15px;
+                        & p {
+                            @extend %text;
+                            
+                        }
+                        .color_bar {
+                            margin-top: 0;
+                        }
+                    }
+                    .size-shues {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 15px;
+                        & p {
+                            @extend %text;
+                        }
+                        .btn-group > .btn {
+                            border: 2px solid;
+                            border-radius: 3px;
+                            border-color: $gray;
+                            padding: 0 30px;
+                        }
+                        .dropdown-menu {
+                            text-align: end;
+                        }
+                    }
+                    .quantiti {
+                        margin-top: 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        .buttonLike {
+                            display: flex;
+                        }
+                    }
+                    .shareBtn {
+                        display: flex;
+                        justify-content: space-between;
+                        .shareFasebook {
+                            display: flex;
+                            justify-content: space-between;
+                            border: none;
+                            align-items: center;
+                            padding: 10px;
+                            border-radius: 3px;
+                            background-color: #385C8E;;
+                            & p {
+                                margin-left: 10px;
+                                @extend %text;
+                                font-size: 1.2rem;
+                                color: white;
+                            }
+                        }
+                        .shareTwitter {
+                            display: flex;
+                            justify-content: space-between;
+                            border: none;
+                            align-items: center;
+                            padding: 10px;
+                            border-radius: 3px;
+                            background-color: #03A9F4;;
+                            & p {
+                                margin-left: 10px;
+                                @extend %text;
+                                font-size: 1.2rem;
+                                color: white;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.availability {
+    & p {
+        @extend %text;
+        margin-top: 10px;
+    }
+    .stock {
+        display: flex;
+        justify-content: space-between;
+    }
+    .category {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.plus_minus {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80px;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 3px;
+    .minus {
+        color: $blue;
+        @extend %text;
+    }
+    .plus {
+        color: $blue;
+        @extend %text;
+    }
+    .number {
+        @extend %text;
+        margin: 0 20px;
+    }
+}

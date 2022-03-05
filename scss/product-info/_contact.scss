@@ -1,0 +1,68 @@
+.forms {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    align-items: center;
+    border: 2px solid;
+    border-color: $blue;
+    border-radius: 3px;
+    .getIn {
+        min-height: 400px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $blue;
+        align-items: center;
+        width: 50%;
+        .img {
+            position: absolute;
+            left: -70px;
+            & img {
+                max-width: 340px;
+            }
+        }
+        .getInToch {
+            text-align: left;
+            background-color: $blue;
+            max-width: 175px;
+            margin-left: 200px;
+            & h2 {
+                @extend %sub-caption;
+                color: white;
+                margin-bottom: 40px;
+                max-width: 90px;
+            }
+            & p {
+                @extend %text;
+                color: white;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+.formInput {
+    margin: 0 auto;
+    width: 50%;
+    .input-group {
+        margin-bottom: 20px;
+    }
+    
+    .contact-btn {
+        display: flex;
+        justify-content: center;
+        .btnSide {
+            background-color: $blue;
+            border-radius: 3px;
+            color: white;
+        } 
+    }
+    & textarea {
+        resize: none;
+    }
+}
+
+.input-group .form-control {
+    padding: 10px;
+}

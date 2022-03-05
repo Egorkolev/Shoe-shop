@@ -1,0 +1,22 @@
+.hot_dial {
+    background-color: whitesmoke;
+    width: 100%;
+    .dialBar {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        padding: 15px;
+        & a {
+            @extend %text;
+            font-size: 1.8rem;
+            &:hover {
+                color: $blue;
+            }
+        }
+        & p {
+            @extend %text;
+            font-size: 1.8rem;
+            margin: 0 20px;
+        }
+    }
+}

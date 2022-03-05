@@ -1,0 +1,33 @@
+$blue: #40BFFF;
+$red: #FB7181;
+$gray: #C1C8CE;
+
+// captions
+%caption {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.8rem;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+
+}
+%section-caption {
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+    color: #22262A;
+}
+
+%text {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: #22262A;
+}
+
+%sub-caption {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #22262A;
+}

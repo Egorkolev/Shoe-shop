@@ -1,0 +1,130 @@
+
+@media only screen and (max-width: 600px) {
+    .sale {
+        display: none;
+    }
+    .shues-Slider {
+        width: 100%;
+        margin: 4rem 0;
+    }
+    .swiper.mySwiper3 {
+        width: 100%;
+        margin: 5rem auto;
+    }
+    .shues-information {
+        margin: 0 auto;
+    }
+    .product-Info .shues-Info .slider-information {
+        justify-content: center;
+    }
+    .navigation-tabs .nav-tabs {
+        gap: 2rem;
+    }
+    .cart-product .cart-shues {
+        gap: 2rem;
+    }
+    .cart-product {
+        margin: 1rem;
+    }
+    .cart-product .cart-shues .unit-price .plus_minus {
+        margin: 0 3rem;
+    }
+    .cart-product .cart-name {
+        flex-wrap: nowrap;
+    }
+    .container-fluid {
+        justify-content: center;
+    }
+    .firstSkrin .container .caption {
+        font-size: 3rem;
+    }
+    .firstSkrin {
+        min-height: 50rem;
+        margin-bottom: 10rem;
+    }
+    .navbar .container-fluid {
+        justify-content: right;
+    }
+    .forms .getIn .img {
+        display: none;
+    }
+    .forms .getIn .getInToch {
+        margin: 0 auto;
+    }
+    .cart-inform .total-prise .container {
+        gap: 2rem;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .slider-information {
+        gap: 3rem;
+    }
+    .product-Info .shues-Info .slider-information {
+        justify-content: center;
+    }
+    .shues-information {
+        margin: 0 auto;
+    }
+    .navigation-tabs .nav-tabs {
+        gap: 2rem;
+    }
+    .cart-product .cart-shues {
+        gap: 2rem;
+    }
+    .cart-product {
+        margin: 1rem;
+    }
+    .cart-product .cart-name {
+        flex-wrap: nowrap;
+    }
+    .container-fluid {
+        justify-content: center;
+    }
+    .navbar .container-fluid {
+        justify-content: right;
+    }
+    .forms .getIn .img {
+        display: none;
+    }
+    .forms .getIn .getInToch {
+        margin: 0 auto;
+    }
+    .cart-inform .total-prise .container {
+        gap: 2rem;
+    }
+} 
+
+@media only screen and (min-width: 768px) {
+    .slider-information {
+        gap: 3rem;
+    }
+    .product-Info .shues-Info .slider-information {
+        justify-content: center;
+        gap: 4rem;
+    } 
+    .navbar .container-fluid {
+        justify-content: right;
+    }
+    .forms .getIn .img {
+        display: block;
+    }
+    .forms .getIn .getInToch {
+        margin-left: 200px;
+    }
+} 
+
+@media only screen and (min-width: 992px) {
+    .slider-information {
+        gap: 0;
+    }
+} 
+
+@media only screen and (min-width: 1200px) {
+    .slider-information {
+        gap: 0;
+    }
+    .product-Info .shues-Info .slider-information {
+        gap: 0;
+    }
+}

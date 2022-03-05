@@ -1,0 +1,50 @@
+.row {
+    margin: 50px 0;
+}
+
+.productName {
+    @extend %section-caption;
+    text-align: center;
+}
+
+.card-body {
+    .card-title {
+        @extend %sub-caption;
+    }
+    .star {
+        margin-top: 20px;
+        & ul {
+            display: flex;
+            & li {
+                margin-right: 10px;
+            }
+        }
+    }
+    .prices {
+        margin-top: 20px;
+        display: flex;
+        .discount {
+            @extend %sub-caption;
+            color: $red;
+            margin-right: 10px;
+        }
+        .price {
+            @extend %sub-caption;
+            color: $gray;
+            text-decoration: line-through;
+        }
+    }
+}
+
+.card-title {
+    max-width: 165px;
+}
+
+.card {
+    border: none;
+}
+
+.nikeSneakers {
+    display: flex;
+    flex-wrap: wrap;
+}

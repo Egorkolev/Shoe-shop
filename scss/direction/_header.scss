@@ -1,0 +1,200 @@
+.headerMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-right: .75rem;
+}
+
+.btn-group>.btn  {
+    color: #22262A;
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    font-size: 1.6rem;
+}
+
+.dropdown-menu {
+    border: none;
+    font-size: 1.6rem;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    border-radius: 0;
+}
+
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.nav-link2 {
+    & :hover {
+        color: $blue;
+    }
+}
+
+.nav-link {
+    padding: 0;
+    margin-left: 20px;
+    color: black;
+    font-size: 16px;
+    line-height: 24px;
+    color: #262626;
+}
+
+.nav-linkPro {
+    padding: 0;
+    color: black; 
+    font-size: 16px;
+    line-height: 24px;
+    color: #262626;
+    margin-left: 5px;
+}
+
+a {
+    color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    .logoName {
+        display: flex;
+        align-items: center;
+        & p {
+            margin-left: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 27px;
+            color: #22262A;
+        }
+    }
+}
+
+.bg-light {
+    background-color: white!important;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    .search {
+        margin-left: 5px;
+    }
+}
+
+.string {
+    background: #FAFAFB;
+    width: 100%;
+    height: 3px;
+}
+
+.navbar-expand-lg .navbar-nav {
+    @extend %sub-caption;
+}
+
+
+.nav-item {
+    position: relative;
+    margin-left: 20px;
+    & :hover {
+        color: $blue;
+    }
+}
+
+.card-qantity {
+    position: absolute;
+    color: white;
+    background-color: #FB7181;
+    text-align: center;
+    border-radius: 50%;
+    top: -13px;
+    right: -14px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 25px;
+}
+
+
+// dropdown HOME -->
+
+.menuBox {
+    position: relative;
+}
+
+.dropBox {
+    display: none;
+    position: absolute;
+    width: 100%;
+    max-width: 900px;
+    background-color: whitesmoke;
+    flex-wrap: wrap;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between;
+    padding: 30px;
+    .dropText {
+        & ul {
+            & li {
+                margin-top: 20px;
+                & :hover {
+                    color: $blue;
+                }
+                & a {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #262626;
+                }
+                & h2 {
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 33px;
+                    color: #C1C8CE;
+                }
+            }
+        }
+    }
+}
+
+.dropText_smole {
+    margin-top: 53px;
+    & ul {
+        & li {
+            margin-top: 20px;
+            & :hover {
+                color: $blue;
+            }
+            & a {
+                font-size: 16px;
+                line-height: 24px;
+                color: #262626;
+            }
+        }
+    }
+}
+
+
+body.open-dropbox {
+    .dropBox {
+        display: flex;
+        z-index: 1;
+    }
+    .arrow {
+        transform: rotate(180deg);
+        transition: .2s all;
+        cursor: pointer;
+    }
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+

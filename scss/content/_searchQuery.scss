@@ -1,0 +1,14 @@
+.input-group {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    .form-control {
+        border-color: $blue;
+    }
+    .btn {
+        color: white;
+        background-color: $blue;
+        border: none;
+        padding: 10px 15px;
+    }
+}

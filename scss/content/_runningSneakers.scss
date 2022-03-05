@@ -1,0 +1,40 @@
+.runningSneakers {
+    background-color: $blue;
+    margin-top: 80px;
+    position: sticky;
+    .container {
+        position: relative;
+        .adidasText {
+            padding: 140px 0;
+            z-index: 1;
+            & h2 {
+                @extend %caption;
+                font-size: 55px;
+                line-height: 82px;
+                max-width: 600px;
+            }
+            & p {
+                @extend %sub-caption;
+                color: white;
+            }
+            .button {
+                @extend %sub-caption;
+                color: white; 
+                text-decoration: underline;
+                margin:20px 0;
+                cursor: pointer;
+                &:hover{
+                    cursor: pointer;
+                    opacity: .6;
+                }
+            }
+        }
+        .adidasImg {
+            position: absolute;
+            top: -85px;
+            right: 0;
+            z-index: -1;
+        }
+    }
+}
+

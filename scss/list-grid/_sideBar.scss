@@ -1,0 +1,372 @@
+.hot-Deals {
+    background-color: whitesmoke;
+    padding: 15px;
+    margin-top: 30px;
+    .nameBar {
+        @extend %sub-caption;
+        font-size: 1.8rem;
+    }
+    .menuBar {
+        .contentBar {
+            & a {
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0;
+                & p {
+                    @extend %text;
+                    font-size: 1.6rem;
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.color_bar {
+    display: flex;
+    margin-top: 10px;
+    & li {
+        margin-right: 10px;
+    }
+}
+
+.btnSide {
+    width: 250px;
+    margin-top: 30px;
+    border: none;
+    padding: 10px;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
+
+.sidebar {
+    max-width: 250px;
+}
+.divider{
+    width: 0;
+}
+// runningSneakers
+
+.list-grid {
+    .main {
+        .container-fluid {
+            display: flex;
+            max-width: 100%;
+            flex-wrap: wrap;
+            .contentGrid {
+                margin-top: 30px;
+                margin-left: 30px;
+                width: 100%;
+                flex: 1 1 500px;
+                .runningSneakers {
+                    margin-top: 0;
+                    .container {
+                        .adidasBox {
+                            .adidasText {
+                                padding: 20px;
+                                & h2 {
+                                    font-size: 3.2rem;
+                                    max-width: 350px;
+                                    line-height: 55px;
+                                }
+                            }
+                            .adidasImg {
+                                top: -40px;
+                                display: flex;
+                                justify-content: flex-end;
+                                & img {
+                                    width: 50%;
+
+                                }
+                            }
+                        }
+                    }
+                }
+                // SORT BY THE SERCHING
+                .sortSerch {
+                    margin-top: 30px;
+                    background-color: whitesmoke;
+                    padding: 5px 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    .sortBy {
+                        display: flex;
+                        align-items: center;
+                        & h5 {
+                            font-size: 1.6rem;
+                            margin-right: 20px;
+                        }
+                        .lang {
+                            .btn-group {
+                                align-items: center;
+                                margin-left: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sellerItems{
+        &.active-grid{
+            display: block;
+            .selBox{
+                .content{
+                    display: flex;
+                    align-items: center;
+                }
+                .selBox__img{
+                    max-width: 300px;
+                }
+                .bottomInfo {
+                    text-align: left;
+                    margin-left: 10px;
+
+                }
+                .divider{
+                    width: 60%;
+                    margin: 17px 0;
+                    height: 1px;
+                    background-color: whitesmoke;
+                }
+            }
+            .star {
+
+                & ul {
+                    justify-content: left;
+                }
+            }
+            .prices {
+                justify-content: left;
+
+            }
+            .textitem{
+                display: block;
+            }
+        }
+    }
+}
+
+// BURGER BUTTON
+.burgerBtns {
+    /* nav-icon-1 */
+    .nav-icon-1{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        transition: .1s;
+        margin: 10px 10px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .nav-icon-1 span{
+        width: 5px;
+        height: 5px;
+        background-color: #C1C8CE;;
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+    
+    }
+    .nav-icon-1:hover span{
+        transform: scale(1.2);
+        transition: 350ms cubic-bezier(.8, .5, .2, 1.4);
+        background-color: $blue;
+    }
+    .nav-icon-1 span:nth-child(1){
+        left: 0;
+        top: 0;
+    }
+    .nav-icon-1 span:nth-child(2){
+        left: 12px;
+        top: 0;
+    }
+    .nav-icon-1 span:nth-child(3){
+        right: 0;
+        top: 0;
+    }
+    .nav-icon-1 span:nth-child(4){
+        left: 0;
+        top: 12px;
+    }
+    .nav-icon-1 span:nth-child(5){
+        position: absolute;
+        left: 12px;
+        top: 12px;
+    }
+    .nav-icon-1 span:nth-child(6){
+        right: 0px;
+        top: 12px;
+    }
+    .nav-icon-1 span:nth-child(7){
+        left: 0px;
+        bottom: 0px;
+    }
+    .nav-icon-1 span:nth-child(8){
+        position: absolute;
+        left: 12px;
+        bottom: 0px;
+    }
+    .nav-icon-1 span:nth-child(9){
+        right: 0px;
+        bottom: 0px;
+    }
+    .nav-icon-1.open{
+        transform: rotate(180deg);
+        cursor: pointer;
+        transition: .2s cubic-bezier(.8, .5, .2, 1.4);
+    }
+    .nav-icon-1.open span{
+        border-radius: 50%;
+        transition-delay: 200ms;
+        transition: .5s cubic-bezier(.8, .5, .2, 1.4);
+    }
+    .nav-icon-1.open span:nth-child(2) {
+        left: 6px;
+        top: 6px;
+    }
+    .nav-icon-1.open span:nth-child(4) {
+        left: 6px;
+        top: 18px;
+    }
+    .nav-icon-1.open span:nth-child(6) {
+        right: 6px;
+        top: 6px;
+    }
+    .nav-icon-1.open span:nth-child(8) {
+        left: 18px;
+        bottom: 6px;
+    }
+
+    /* nav-icon-8 */
+    .nav-icon-8{
+        width: 35px;
+        height: 30px;
+        margin: 10px 10px;
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .nav-icon-8 span{
+        background-color:#C1C8CE;;
+        position: absolute;
+        border-radius: 2px;
+        transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+        width:100%;
+        height: 4px;
+        &:hover {
+            background-color: $blue;
+        }
+    }
+    .nav-icon-8 span:nth-child(1){
+        top:0px;
+        left: 0px;
+    }
+    .nav-icon-8 span:nth-child(2){
+        top:13px;
+        left: 0px;
+    }
+    .nav-icon-8 span:nth-child(3){
+        bottom:0px;
+        left: 0px;
+    }
+    .nav-icon-8:not(.open):hover span:nth-child(1){
+        transform: scaleX(.8);
+        background-color: $blue;
+    }
+    .nav-icon-8:not(.open):hover span:nth-child(2){
+        transform: scaleX(.5);
+        background-color: $blue;
+    }
+    .nav-icon-8:not(.open):hover span:nth-child(3){
+        transform: scaleX(.8);
+        background-color: $blue;
+    }
+    .nav-icon-8.open span:nth-child(1){
+        top: 13px;
+    }
+    .nav-icon-8.open span:nth-child(2){
+        top:13px;
+    }
+    .nav-icon-8.open span:nth-child(3){
+        top: 13px;
+    }
+  
+}
+
+.textitem {
+    color: black;
+    font-size: 1.4rem;
+    display: none;
+    max-width: 700px;
+    margin:  10px 0;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.buttonLike {
+    display: none;
+    .buttonAdd {
+        border: none;
+        align-items: center;
+        padding: 10px;
+        border-radius: 3px;
+        transition: .3s ease-in-out;
+        margin-right: 10px;
+        display: flex;
+        background-color: rgba(51, 160, 255, .1);
+        & svg {
+            opacity: 1;
+            color: $blue;
+        }
+        & p {
+            opacity: 1;
+            margin-left: 5px;
+            color: $blue;
+        }
+        &:hover{
+            opacity: .6;
+        }
+    }
+}
+
+.sellerItems.active-grid .buttonLike {
+    display: flex;
+}
+
+.sellerItems.active-grid .selBox .shop {
+    display: none;
+}
+
+.paginator {
+    width: 100%;
+    margin: 30px auto;
+    white-space: nowrap;
+    background: whitesmoke;
+    .paginatorMenu {
+        text-align: center;
+    }
+
+}
+
+.paginator a,
+.paginator span {
+    display: inline-block;
+    min-width: 20px;
+    height: 40px;
+    padding: 0 10px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    font-style: normal;
+    &:hover {
+        background-color: $blue;
+    }
+}

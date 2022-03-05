@@ -1,0 +1,90 @@
+.cart-product {
+    margin-top: 30px;
+    .cart-name {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .price-qty {
+            display: flex;
+            flex-wrap: wrap;
+            & h2 {
+                margin-left: 80px;
+            }
+        }
+        & h2 {
+            @extend %sub-caption;
+        }
+    }
+    .string {
+        margin: 30px 0;
+    }
+    .cart-shues {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        .chused-shues {
+            display: flex;
+            align-items: center;
+            & img {
+                max-width: 100px;
+                margin: 0 30px;
+            }
+        }
+        .unit-price {
+            display: flex;
+            align-items: center;
+            .plus_minus {
+                margin: 0 100px;
+            }
+        }
+        & p {
+            @extend %text;
+        }
+    }
+}
+
+.cart-inform {
+    .total-prise {
+        margin: 80px 0;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .voucher-code {
+                .input-group {
+                    margin: 0;
+                }
+            }
+            .total-prises {
+                .availability {
+                    .price-shues {
+                        margin-left: 80px;
+                    }
+                    & p {
+                        margin-bottom: 20px;
+                        margin-top: 0;
+                    }
+                }
+                .total {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    & h2 {
+                        @extend %sub-caption;
+                    }
+                }
+                .btnSide {
+                    color: white;
+                    background-color: $blue;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}
+
+.shipping {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,45 @@
+.navigation-tabs {
+    margin-top: 30px;
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 10px;
+    min-height: 300px;
+    .nav-tabs {
+        margin-bottom: 20px;
+        border-bottom: 3px solid #dee2e6;
+        .nav-item {
+            .nav-link {       
+                border: none;
+                @extend %sub-caption;
+                background-color: transparent;
+                margin-bottom: -3px;
+                padding-bottom: 20px;
+                &.active {
+                    border-bottom: 3px solid;
+                    border-color: $blue;
+                    color: $blue;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+    .tab-content {
+        .tab-pane {
+            & p {
+                @extend %text;
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+.related-products {
+    margin-bottom: 50px;
+    .related-name {
+        & h2 {
+            @extend %section-caption;
+            text-align: center;
+            margin: 50px 0;
+        }
+    }
+}
