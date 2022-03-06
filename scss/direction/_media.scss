@@ -55,6 +55,22 @@
         gap: 2rem;
         justify-content: center;
     }
+    .list-grid .main .container-fluid .contentGrid {
+        margin-left: 0;
+    }
+    .list-grid .sellerItems.active-grid .selBox .content {
+        display: block;
+    }
+    .list-grid .sellerItems.active-grid .selBox .selBox__img {
+        max-width: none;
+    }
+    .sidebar {
+        max-width: none;
+        width: 100%;
+    }
+    .btnSide {
+        width: 100%;
+    }
 }
 @media only screen and (min-width: 600px) {
     .slider-information {

@@ -924,10 +924,9 @@ body.open-dropbox .arrow {
 }
 
 .btnSide {
-  width: 250px;
   margin-top: 30px;
   border: none;
-  padding: 10px;
+  padding: 1rem 10rem;
   font-size: 1.4rem;
   line-height: 2.1rem;
 }
@@ -1347,7 +1346,6 @@ input {
 }
 
 .price-slider {
-  max-width: 150px;
   margin: auto;
   text-align: center;
   position: relative;
@@ -2186,6 +2184,22 @@ input[type=range]::-ms-thumb {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .list-grid .main .container-fluid .contentGrid {
+    margin-left: 0;
+  }
+  .list-grid .sellerItems.active-grid .selBox .content {
+    display: block;
+  }
+  .list-grid .sellerItems.active-grid .selBox .selBox__img {
+    max-width: none;
+  }
+  .sidebar {
+    max-width: none;
+    width: 100%;
+  }
+  .btnSide {
+    width: 100%;
   }
 }
 
